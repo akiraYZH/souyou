@@ -1,0 +1,25 @@
+<!--packageB/cardInfo/cardInfo.wxml-->
+<view class="container">
+	<block>
+		<image src="../../assets/bg_index.png" class="bg"></image>
+		<image src="../../assets/bg_tl.png" class="bg_tl"></image>
+		<image src="../../assets/bg_tr.png" class="bg_tr"></image>
+		<image src="../../assets/bg_bl.png" class="bg_bl"></image>
+		<image src="../../assets/bg_br.png" class="bg_br"></image>
+		<image src="../assets/bg_head3.png" class="bg_head3"></image>
+	</block>
+  <view class="detail">
+    <image src="../assets/1.png" class="img" hidden='{{!showCtls[0]}}'></image>
+    <image src="../assets/2.png" class="img" hidden='{{!showCtls[1]}}'></image>
+    <image src="../assets/3.png" class="img" hidden='{{!showCtls[2]}}'></image>
+    <image src="../assets/4.png" class="img" hidden='{{!showCtls[3]}}'></image>
+    <image src="../assets/5.png" class="img" hidden='{{!showCtls[4]}}'></image>
+  </view>
+  <view class="btn_box">
+    <image src="../assets/btn_top.png" class="btn_top" bindtap="toMyCards"></image>
+    <button open-type="share" class="btnb_box" style="width:auto; height:auto">
+      <image src="../assets/btn_bottom.png" class="btn_bottom"></image>
+    </button>
+    
+  </view>
+  </view>

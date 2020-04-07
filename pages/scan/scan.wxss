@@ -1,0 +1,79 @@
+.bg{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -2;
+
+}
+
+.bg_tl, .bg_tr, .bg_bl, .bg_br{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg_head{
+  position: absolute;
+  top: 40rpx;
+  left: 3%;
+  width: 94%;
+  height: 403rpx;
+  z-index: -1;
+}
+
+.rules_b{
+  position: absolute;
+  height: 300rpx;
+  width: 100%;
+  bottom: 30rpx;
+  left:0;
+  z-index: -1;
+
+}
+
+.btn_box{
+  width: 643rpx;
+  position: absolute;
+  left: 50%;
+  bottom:260rpx;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.btn_top{
+  width: 310rpx;
+  height: 83rpx;
+}
+.btn_top_hover{
+  width: 310rpx;
+  height: 83rpx;
+  opacity: 0.8;
+}
+.btn_bottom{
+  width: 310rpx;
+  height: 83rpx;
+}
+.btn_bottom_hover{
+  width: 310rpx;
+  height: 83rpx;
+  opacity: 0.8;
+}
+
+.blink{
+  position: absolute;
+  width: 665rpx;
+  height: 200rpx;
+  bottom:330rpx;
+  z-index: 2;
+}
+
+.camera{
+  width: 270rpx;
+  height:270rpx;
+  position: absolute;
+  top: 496rpx;
+}

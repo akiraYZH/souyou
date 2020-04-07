@@ -1,0 +1,43 @@
+<!--packageB/fill/fill.wxml-->
+<view class="container">
+	<block>
+		<image src="../../assets/bg_index.png" class="bg"></image>
+		<image src="../../assets/bg_tl.png" class="bg_tl"></image>
+		<image src="../../assets/bg_tr.png" class="bg_tr"></image>
+		<image src="../../assets/bg_bl.png" class="bg_bl"></image>
+		<image src="../../assets/bg_br.png" class="bg_br"></image>
+		<image src="../assets/bg_head3.png" class="bg_head3"></image>
+	</block>
+	<view class="prize_title">{{prize_name}}</view>
+	<image src="../assets/gifts.png" class="gifts"></image>
+	<image src="../assets/form.png" class="form"></image>
+	<form bindsubmit="formSubmit" bindreset="formReset" class="form form-tag">
+		<view class="row">
+			<text class="form-text">姓 名 :</text>
+			<input name="name" class="input" type="text"></input>
+		</view>
+		<view class="row">
+			<text class="form-text">年 龄 :</text>
+			<input name="age" class="input" type="number"></input>
+		</view>
+		<view class="row">
+			<text class="form-text">手机号码 :</text>
+			<input name="phone" class="input" type="number" bindblur="checkPhone"></input>
+		</view>
+		<view class="row">
+			<text class="form-text">城 市 :</text>
+			
+			<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="input">
+      <input name="city" class="input picker" type="text" value="{{region[0]}}, {{region[1]}}, {{region[2]}}"></input>
+			</picker>
+		</view>
+		<view class="row">
+			<text class="form-text">地 址 :</text>
+			<input name="home" class="input" type="text"></input>
+		</view>
+    <button formType="submit" class="submit-btn" style="width:310rpx;height:83rpx">
+      <image class="submit" src="../assets/submit.png" bindtap="submit"></image>
+    </button>
+	</form>
+  
+</view>

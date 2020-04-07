@@ -1,0 +1,66 @@
+<view class="container">
+	<block>
+		<image src="../../assets/bg_index.png" class="bg"></image>
+		<image src="../../assets/bg_tl.png" class="bg_tl"></image>
+		<image src="../../assets/bg_tr.png" class="bg_tr"></image>
+		<image src="../../assets/bg_bl.png" class="bg_bl"></image>
+		<image src="../../assets/bg_br.png" class="bg_br"></image>
+		<image src="../assets/drops.png" class="drops"></image>
+		<image src="../assets/bg_head2.png" class="bg_head2"></image>
+
+		<image src="../assets/gifts.png" class="gifts"></image>
+	</block>
+	<image class="hecheng_glob" src='../assets/hecheng_glob.png'></image>
+	<image class="hecheng_btn" src="../assets/hecheng_btn.png" bindtap="compose"></image>
+
+	<view class="foot_box">
+		<image src="../assets/foot.png" class="foot"></image>
+		<scroll-view class="scroll_box" enable-flex="true" scroll-x="true">
+			<view class="card_box {{is_two?'':'grey'}}">
+				<image src="../assets/sanyouqi.png" class="card"></image>
+				<image src="../assets/sanyouqi2.png" class="card"></image>
+				<view class="card_name">两邮齐</view>
+			</view>
+			<view class="card_box" data-index="{{data.user_card_list[0].card_type_id}}" data-num="{{data.user_card_list[0].card_num}}" bindtap='cardTab'>
+				<image src="../assets/huanleyou.png" class="card"></image>
+				<image src="../assets/huanleyou2.png" class="card" hidden="{{!data.user_card_list[0].is_selected}}"></image>
+				<view class="card_name">{{data.user_card_list[0].card_type_name}} {{data.user_card_list[0].card_num}}</view>
+			</view>
+			<view class="card_box" data-index="{{data.user_card_list[1].card_type_id}}" data-num="{{data.user_card_list[1].card_num}}" bindtap='cardTab'>
+				<image src="../assets/huanleyou.png" class="card"></image>
+				<image src="../assets/huanleyou2.png" class="card" hidden="{{!data.user_card_list[1].is_selected}}"></image>
+				<view class="card_name">{{data.user_card_list[1].card_type_name}} {{data.user_card_list[1].card_num}}</view>
+			</view>
+			<view class="card_box" data-index="{{data.user_card_list[2].card_type_id}}" data-num="{{data.user_card_list[2].card_num}}" bindtap='cardTab'>
+				<image src="../assets/huanleyou.png" class="card"></image>
+				<image src="../assets/huanleyou2.png" class="card" hidden="{{!data.user_card_list[2].is_selected}}"></image>
+				<view class="card_name">{{data.user_card_list[2].card_type_name}} {{data.user_card_list[2].card_num}}</view>
+			</view>
+			<view class="card_box" data-index="{{data.user_card_list[3].card_type_id}}" data-num="{{data.user_card_list[3].card_num}}" bindtap='cardTab'>
+				<image src="../assets/changkuaiyou.png" class="card"></image>
+				<image src="../assets/changkuaiyou2.png" class="card" hidden="{{!data.user_card_list[3].is_selected}}"></image>
+				<view class="card_name">{{data.user_card_list[3].card_type_name}} {{data.user_card_list[3].card_num}}</view>
+			</view>
+			<view class="card_box" data-index="{{data.user_card_list[4].card_type_id}}" data-num="{{data.user_card_list[4].card_num}}" bindtap='cardTab'>
+				<image src="../assets/yuexiangyou.png" class="card"></image>
+				<image src="../assets/yuexiangyou2.png" class="card" hidden="{{!data.user_card_list[4].is_selected}}"></image>
+				<view class="card_name">{{data.user_card_list[4].card_type_name}} {{data.user_card_list[4].card_num}}</view>
+			</view>
+		</scroll-view>
+
+
+	</view>
+	<view class="pop" hidden="{{!resultShow}}">
+		<view class="mask"></view>
+		<view class="result">
+			<image src="../assets/congra.png" class="panel"></image>
+			<image src="../assets/coupon.png" class="coupon"></image>
+			<view class="result_text">
+				<view class="prize_name">{{resultText}}</view>
+				<text class="postal">已放入您的邮政账号\n0000000000000</text>
+			</view>
+			<image src="../assets/fill_btn.png" class="fill_btn" bindtap="toFill"></image>
+		</view>
+	</view>
+
+</view>

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+	<block>
+		<image src="../../assets/bg_index.png" class="bg"></image>
+		<image src="../../assets/bg_tl.png" class="bg_tl"></image>
+		<image src="../../assets/bg_tr.png" class="bg_tr"></image>
+		<image src="../../assets/bg_bl.png" class="bg_bl"></image>
+		<image src="../../assets/bg_br.png" class="bg_br"></image>
+    <image src="../../assets/bg_head.png" class="bg_head"></image>
+    <image src="../../assets/rules_b.png" class="rules_b"></image>
+		<image src="../../assets/blink.png" class="blink"></image>
+	</block>
+	<image class="camera" src='../../assets/scan.png'></image>
+  <view class="btn_box">
+    <image src="../../assets/scan_btn.png" class="btn_top" bindtap="takePhoto"></image>
+  <image src="../../assets/my_carts_btn.png" class="btn_bottom" bindtap="toMyCards"></image>
+  </view>
+  
+</view>

@@ -1,0 +1,92 @@
+/* packageB/fill/fill.wxss */
+.bg{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -2;
+
+}
+
+.bg_tl, .bg_tr, .bg_bl, .bg_br{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.bg_head3{
+  position: absolute;
+  top: 40rpx;
+  left: 3%;
+  width: 94%;
+  height: 300rpx;
+  z-index: -1;
+}
+
+.prize_title{
+  font-size: 51rpx;
+  text-shadow: 0 0 8rpx white;
+  position: absolute;
+  top: 300rpx;
+}
+.gifts{
+  width: 424rpx;
+  height: 175rpx;
+  position: absolute;
+  top:400rpx;
+}
+
+.form{
+  width: 517rpx;
+  height: 496rpx;
+  position: absolute;
+  bottom: 80rpx;
+}
+.form-tag{
+  padding: 80rpx 60rpx 90rpx;
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  vertical-align: bottom;
+  margin-bottom: 34rpx;
+}
+.form-text{
+  font-size: 21rpx;
+  max-width: 110rpx;
+  display: inline-block;
+  height: 40rpx;
+  vertical-align: bottom;
+  line-height: 40rpx;
+  margin-right: 10rpx;
+}
+.input{
+  height: 40rpx;
+  min-height: 40rpx;
+  font-size: 21rpx;
+  
+  border-bottom: 1rpx solid black;
+  vertical-align: bottom;
+  flex-grow: 1;
+}
+.submit{
+  width: 100%;
+  height: 83rpx;
+  /* position: absolute;
+  bottom: 50rpx; */
+}
+
+.submit-btn{
+  padding: 0;
+  
+  background-color: transparent;
+}
+.submit::after{
+  position: absolute;
+  bottom: 50rpx;
+}
+

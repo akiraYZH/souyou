@@ -1,0 +1,215 @@
+/* packageA/myCards/myCards.wxss */
+.bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+}
+
+.bg_tl,
+.bg_tr,
+.bg_bl,
+.bg_br {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.bg_head2 {
+  position: absolute;
+  top: 40rpx;
+  left: 3%;
+  width: 94%;
+  height: 403rpx;
+  z-index: -1;
+}
+
+.foot {
+  position: absolute;
+  height: 300rpx;
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+
+}
+
+.foot_box {
+  position: absolute;
+  height: 300rpx;
+  width: 100%;
+  bottom: 30rpx;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 0 90rpx;
+  box-sizing: border-box;
+}
+
+.btn_box {
+  width: 643rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 260rpx;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.gifts {
+  width: 690rpx;
+  height: 350rpx;
+  position: absolute;
+  bottom: 110rpx;
+  z-index: -2;
+}
+
+.hecheng_glob {
+  width: 750rpx;
+  height: 780rpx;
+  position: absolute;
+  top: 220rpx;
+  z-index: -1;
+}
+
+.hecheng_btn {
+  width: 260rpx;
+  height: 250rpx;
+  position: absolute;
+  top: 482rpx;
+  animation: btn 0.5s alternate-reverse infinite ease-in-out;
+}
+
+.drops {
+  width: 579rpx;
+  height: 683prx;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.card_box {
+  position: relative;
+  margin-top: 136rpx;
+  width: 130rpx;
+  height: 148rpx;
+  display: inline-block;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.card_name {
+  position: absolute;
+  width: 100%;
+  bottom: -15rpx;
+  font-size: 21rpx;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  width: 130rpx;
+  height: 135rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes btn {
+  0% {
+    transform: scale(1)
+  }
+
+  100% {
+    transform: scale(1.06)
+  }
+}
+
+.mask {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+.result {
+  width: 650rpx;
+  height: 782rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+}
+
+.coupon {
+  width: 336rpx;
+  height: 170rpx;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.prize_name {
+  text-align: center;
+  margin-top: 300rpx;
+  font-size: 40rpx;
+}
+
+.postal {
+  display: block;
+  text-align: center;
+  width: 400rpx;
+  margin: 200rpx auto 0;
+  font-size: 20rpx;
+  color: gray;
+}
+
+.fill_btn {
+  width: 342rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 700rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll_box {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.grey {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  _filter: none;
+}
